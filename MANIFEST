@@ -12,6 +12,7 @@ dist.ini
 examples/simple.pl
 lib/Tickit/Widget/Decoration.pm
 lib/Tickit/Widget/Decoration.pod
+screenshots/black-to-white-gradient.png
 t/00-check-deps.t
 t/00-compile.t
 xt/author/test-eol.t

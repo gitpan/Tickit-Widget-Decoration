@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use parent qw(Tickit::Widget);
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 =head1 NAME
 
@@ -12,7 +12,7 @@ Tickit::Widget::Decoration - do nothing, in a visually-appealing way
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -23,6 +23,12 @@ version 0.001
 =head1 DESCRIPTION
 
 Renders a pattern.
+
+=begin HTML
+
+<p><img src="http://tickit.perlsite.co.uk/cpan-screenshot/tickit-widget-decoration1.png" alt="Decoration widget example" width="272" height="21"></p>
+
+=end HTML
 
 =head1 STYLE
 
