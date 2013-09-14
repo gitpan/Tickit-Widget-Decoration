@@ -1,0 +1,50 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.73.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 264763f749e8ba1f3ff2c46119b1150da2cdc4aa Changes
+SHA1 31ea0a4ad542019c083d39da0f5f5fe653a8adb1 INSTALL
+SHA1 aeb48d9f22d31def6e02d02d35dd602604e84a36 LICENSE
+SHA1 01670d4a1df90f5a3830081a5b37a976cb4b6a97 MANIFEST
+SHA1 9f662e766682050ec4bd1c9046be47eb6a7b7ff8 META.json
+SHA1 554f5a3b58d75681ed796cff53c5d9acf041d829 META.yml
+SHA1 0172532d726d9526e77e62f29b83a779b028e3d1 Makefile.PL
+SHA1 4a64c563cb20eb48898a23e8a2788cdeed7ec028 README
+SHA1 0a62fafc259673d164ebe86ff1d1d2ed5081a8e9 cpanfile
+SHA1 6e12e8a05e8a870f95162f5000d9330a6b2d14b3 dist.ini
+SHA1 e0e3f7798f1be10311cd7698165879107162553c examples/simple.pl
+SHA1 bad9116d8abbfa5e42f830016b18e2dbac72cac5 lib/Tickit/Widget/Decoration.pm
+SHA1 68dadccd31904a86011a899819d443c1d67bbf97 lib/Tickit/Widget/Decoration.pod
+SHA1 90f75289c4dda63c94bc5e897f4996b15d9e42dd t/00-check-deps.t
+SHA1 eb82ce118facb14bd4d0f376a33384bbfd391a5b t/00-compile.t
+SHA1 8a649950be26c5ee378eec15b7347387b9586aef xt/author/test-eol.t
+SHA1 198d1665317c3d91e3bb81f0a3b8dad8d4d66f20 xt/release/common_spelling.t
+SHA1 c6c3c9f7fe12058b4771449dff874b1c450c982c xt/release/mojibake.t
+SHA1 4c599e8a4ebb7a899f90ee3c235a64fdbc7e2c06 xt/release/pod-coverage.t
+SHA1 9934d36e45e1143c1a54658bc48872e0591af41b xt/release/pod-syntax.t
+SHA1 fd1fa776fca35fc8f1bdd24ee3fbaa1eca755a44 xt/release/synopsis.t
+SHA1 bbcd59d081d9940af5d43337ae85458075933829 xt/release/test-version.t
+SHA1 ec3f84bfd7a9ce3246e7592f4134100c6b5ce02b xt/release/unused-vars.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJSNMcEAAoJEFKElMNpjtyD51wH/1y24oyZnPiV+Dx/qkzCEVqT
+8un1pMd7SWrnan+H7jHCosMcOIVqAgvIvnLIA2sCeffd5uhQPgNPHp4Gkmq6EbJA
+xtqmw4dhou4cqTWXnCxTN0mx++d68JrRHeYpDtyyxlmjdRPlaCLJgPkcfwd2yfHy
+nCe7LNkGnGXebupFJNddugE6Om5QKD6Jnl5L+LRFooDRXmuTR4DAz2uFNNN9vBce
+556C0cM9rRBgGA6AOPdSAl037aR/IH1FjlnTWn7aEw3KpCXu/yEy0cpd/C3B4xNY
+097YZ617cnPH6CPI7zSGigah7wgQRRAy/wK5Dpee+Q1iAjedOFAnE0o0NOjcUDk=
+=xdjr
+-----END PGP SIGNATURE-----
