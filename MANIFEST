@@ -9,6 +9,7 @@ README
 SIGNATURE
 cpanfile
 dist.ini
+examples/directions.pl
 examples/simple.pl
 lib/Tickit/Widget/Decoration.pm
 lib/Tickit/Widget/Decoration.pod

@@ -20,21 +20,16 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Tickit::Widget::Decoration",
   "PREREQ_PM" => {
-    "Future" => "0.15",
-    "Mixin::Event::Dispatch" => "1.000",
-    "Try::Tiny" => 0,
-    "curry" => 0,
+    "Tickit" => "0.33",
     "parent" => 0
   },
   "TEST_REQUIRES" => {
     "IO::Handle" => 0,
     "IPC::Open3" => 0,
     "Test::CheckDeps" => "0.006",
-    "Test::Fatal" => "0.010",
-    "Test::More" => "0.98",
-    "Test::Refcount" => "0.07"
+    "Test::More" => "0.98"
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }

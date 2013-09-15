@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use parent qw(Tickit::Widget);
 
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 =head1 NAME
 
@@ -12,7 +12,7 @@ Tickit::Widget::Decoration - do nothing, in a visually-appealing way
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -45,6 +45,9 @@ for now you get the following:
 
 =item * end_bg - background colour to use as the ending point
 
+=item * gradient_direction - horizontal or vertical, determines which way
+the gradient runs, default horizontal
+
 =back
 
 Only numeric values supported. Terms and conditions may apply.
@@ -56,10 +59,11 @@ use List::Util qw(max);
 
 BEGIN {
 	style_definition base =>
-		start_fg => 232,
-		end_fg => 255,
-		start_bg => 0,
-		end_bg => 0;
+		start_fg           => 232,
+		end_fg             => 255,
+		start_bg           => 0,
+		end_bg             => 0,
+		gradient_direction => 'horizontal';
 }
 
 =head1 METHODS
@@ -116,10 +120,14 @@ sub render_to_rb {
 	}
 	my @chars = ("\x{2580}", "\x{2584}");
 	my $w = $win->cols;
+	my $h = $win->lines;
+	my $pen;
 	for my $y ($rect->linerange) {
+		$pen = $pens[@pens * $y / $h] if $self->get_style_values('gradient_direction') eq 'vertical';
 		my $char_idx = 0;
 		for my $x ($rect->left..$rect->right) {
-			$rb->text_at($y, $x, $chars[$char_idx % @chars], $pens[@pens * $x / $w]);
+			$pen = $pens[@pens * $x / $w] if $self->get_style_values('gradient_direction') eq 'horizontal';
+			$rb->text_at($y, $x, $chars[$char_idx % @chars], $pen);
 			$char_idx++;
 		}
 	}

@@ -14,7 +14,7 @@ Tickit::Widget::Decoration - do nothing, in a visually-appealing way
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -46,6 +46,9 @@ for now you get the following:
 =item * end_fg - foreground colour to use as the ending point
 
 =item * end_bg - background colour to use as the ending point
+
+=item * gradient_direction - horizontal or vertical, determines which way
+the gradient runs, default horizontal
 
 =back
 
